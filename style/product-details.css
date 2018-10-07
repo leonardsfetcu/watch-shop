@@ -1,0 +1,47 @@
+.product-details-container {
+	display: flex;
+	padding: 10px;
+	flex-direction: column;
+}
+
+.product-image-container {
+	border: 4px solid #ddd;
+	border-radius: 10px;
+	display: flex;
+}
+.imgcontainer {
+	max-width: 500px;
+	margin: auto;
+}
+
+.product-image-container img {
+	width: 100%;
+}
+.product-text {
+	display: flex;
+}
+
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px 50px 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}

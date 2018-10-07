@@ -1,0 +1,199 @@
+.content {
+	display: flex;
+	background-color: #e6f3ff;
+}
+
+.right-container {
+	flex-basis: 450px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	display: flex;
+	padding: 40px 20px;
+}
+
+.order-details-container {
+	margin: auto;
+	width: 100%;
+	border: 4px solid white;
+	border-radius: 20px;
+	padding: 15px;
+	background-color: white;
+
+}
+
+table {
+	border-collapse: collapse;
+	margin: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+th {
+	text-align: center;
+}
+
+tr:last-child {
+	text-align: right;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+tr:last-child td:last-child {
+	text-align: center;
+}
+
+tr:last-child td:first-child {
+	padding-right: 20px;
+}
+
+#place-order {
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	float:right;
+	margin: 10px; 
+}
+
+.left-container {
+	flex-basis: 0;
+	flex-shrink: 1;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 20px;			
+
+}
+
+.product-container {
+	display: flex;
+	border: 4px solid white;
+	border-radius: 20px;
+	padding: 15px;
+	margin: 7px 0px;
+	background-color: white;
+}
+
+.image-container {
+	width: 200px;
+}
+
+.image-container img {
+	width: 100%;
+}
+
+.details-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border: 4px solid #e6e6e6;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.description-container {
+	flex-basis: 40%;
+	width: 100%;
+}
+
+.quantity-container {
+	flex-basis: 35%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+
+}
+
+
+.price-container {
+	width: 100%;
+	flex-basis: 25%;
+}
+
+p#name {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+p#description {
+	font-style: italic;
+	font-size: 15px;
+}
+
+p#price-paragraph,#price-value {
+	text-align: center;
+}
+
+p#price-value {
+
+}
+p#product-code {
+	font-size: 8px;
+	position: relative;
+	top: -17px;
+	left: 5px;
+}
+
+button[name="delete-product"] {
+	position: relative;
+	background-color: red;
+	color: white;
+	padding: 2px;
+	bottom: -28px;
+	float:right;
+}
+
+@media screen and (max-width: 1100px) {
+
+	.content {
+		flex-direction: column;
+	}
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 300px;
+}
+
+.modal-content p {
+	margin: 10px;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

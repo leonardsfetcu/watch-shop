@@ -1,0 +1,175 @@
+.content *
+{
+	/*padding: 0;
+	margin: 0;*/
+}
+.content{
+	display: flex;
+}
+
+.filters {
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 200px;
+	padding: 	;
+	text-align: left;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+.product-card {
+	flex-grow: 1;    
+	flex-basis: 20%;
+	flex-shrink: 0;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #ddd;
+	margin: 5px 5px 0;
+	border-radius: 10px;
+}
+
+.product-image {
+	
+
+}
+
+#description {
+}
+
+#price {
+}
+
+img {
+	width: 100%;
+}
+
+.product-info {
+	padding: 20px;
+}
+
+#price {
+	font-style: italic;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.button-row {
+	display: flex;
+	flex-direction: column;
+}
+
+.button-row i {
+	padding-right: 10px;
+	position: absolute;
+	top: 6%;
+	left: 25%;
+	font-size: 30px;
+	color:white;
+}
+
+button[name="add-cart"], button[name="add-wishlist"] {
+	padding: 10px;
+	color: white;
+}
+
+#description {
+	font-size: 20px;
+}
+
+#product-code {
+	font-size: 10px;
+}
+
+.filters {
+	display: flex;
+	padding: 0 10px;
+	border-right: 2px solid rgb(182,175,179);
+}
+
+form {
+	flex: 100%;
+}
+
+
+.filters h4 {
+	padding: 3px;
+	margin: 0;
+}
+
+#apply:hover {
+	background-color: white;
+	color: black;
+}
+.filters h4:hover {
+	background-color: #333;
+	color: white;
+}
+
+.filter-container:hover {
+	background-color: #333;
+	color: white;
+	border-radius: 5px;
+}
+
+
+
+.brand-container, .gender-container, .strap-container, .price-container, .movement-container {
+	margin: 5px;
+	display: none;
+}
+
+.content hr {
+	margin-bottom: 10px;
+}
+
+
+input {
+	padding: 2px;
+}
+input[name="price-end"] {
+	margin-left: 25px;
+}
+input[name="price-start"] {
+	margin-left: 5px;
+}
+
+button {
+	padding: 5px;
+	background-color: #4CAF50;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+@media screen and (max-width: 1300px) {
+
+	.product-card {
+		flex-basis: 30%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+
+	.product-card {
+		flex-basis: 40%;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+	.content {
+		flex-direction: column;
+	}
+	.left-container {
+		flex: 0 0 100px;
+	}
+	.product-card {
+		flex-basis: 50%;
+	}
+}

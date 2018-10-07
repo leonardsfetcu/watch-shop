@@ -1,0 +1,161 @@
+
+.order-container {
+	display: flex;
+	flex-direction: column-reverse;
+	align-content: space-around;
+}
+
+.order-item {
+	border: 4px solid #ddd;
+	border-radius: 20px;
+	margin: 30px;
+	background-color: white;
+
+}
+
+.order-header {
+	display: flex;
+	padding: 5px 20px;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.order-header p, .order-header h4 {
+	margin:0;
+	padding: 0;
+}
+
+.order-id {
+	display: flex;
+	border: 1px solid grey;
+	border-radius: 10px;
+	flex-direction: column;
+	padding: 10px;
+	align-items: center;
+  	justify-content: center;
+}
+
+
+.order-total {
+	display: flex;
+	flex-basis: 120px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	flex-direction: column;
+	padding: 10px;
+	align-items: center;
+  	justify-content: center;
+}
+
+
+.order-date {
+	display: flex;
+	border: 1px solid grey;
+	border-radius: 10px;
+	flex-direction: column;
+	padding: 10px;
+	align-items: center;
+  	justify-content: center;
+}
+
+.order-user_contact {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	align-items: center;
+  	justify-content: center;
+}
+
+.order-user_location {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	flex-basis: 450px;
+		align-items: center;
+  	justify-content: center;
+}
+
+.order-phone {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	align-items: center;
+  	justify-content: center;
+}
+
+
+.order-content h4, .order-content p {
+	margin: 0;
+	padding: 0;
+}
+
+.product-item {
+	display: flex;
+	border-top: 2px solid #ddd;
+	padding: 5px;
+}
+
+.product-image {
+	flex-basis: 200px;
+	display: flex;
+}
+
+.product-image img {
+	margin: auto;
+}
+
+/* ----------------------- */
+
+.product-description {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+}
+
+
+.product-price {
+	flex-basis: 160px;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	padding: 0 15px;
+}
+
+
+.product-quantity {
+	flex-basis: 100px;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  	justify-content: center;
+}
+
+
+/* ------------------------ */
+
+img {
+max-width: 80px;
+}
+
+@media screen and (max-width: 1100px) {
+	.order-header {
+		flex-direction: column;
+	}
+
+	.order-user_location {
+		flex-basis: 100px;
+	}
+
+	.order-total {
+	flex-basis: 50px;
+	}
+}
